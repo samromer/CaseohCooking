@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="discription" content="Meem app">
+    <meta name="msapplication-TileColor" content="#50C878">
+    <meta name="theme-color" content="#50C878">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <title>Caseoh cook</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+
+ <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+ <script>const MDCBanner = mdc.banner.MDCBanner; const MDCCheckbox = mdc.checkbox.MDCCheckbox; const MDCChip = mdc.chips.MDCChip; const MDCChipSet = mdc.chips.MDCChipSet; const MDCCircularProgress = mdc.circularProgress.MDCCircularProgress; const MDCDataTable = mdc.dataTable.MDCDataTable; const MDCDialog = mdc.dialog.MDCDialog; const MDCDrawer = mdc.drawer.MDCDrawer; const MDCFloatingLabel = mdc.floatingLabel.MDCFloatingLabel; const MDCFormField = mdc.formField.MDCFormField; const MDCIconButtonToggle = mdc.iconButton.MDCIconButtonToggle; const MDCLineRipple = mdc.lineRipple.MDCLineRipple; const MDCLinearProgress = mdc.linearProgress.MDCLinearProgress; const MDCList = mdc.list.MDCList; const MDCMenu = mdc.menu.MDCMenu; const MDCMenuSurface = mdc.menuSurface.MDCMenuSurface; const MDCNotchedOutline = mdc.notchedOutline.MDCNotchedOutline; const MDCRadio = mdc.radio.MDCRadio; const MDCRipple = mdc.ripple.MDCRipple; const MDCSegmentedButton = mdc.segmentedButton.MDCSegmentedButton; const MDCSelect = mdc.select.MDCSelect; const MDCSlider = mdc.slider.MDCSlider; const MDCSnackbar = mdc.snackbar.MDCSnackbar; const MDCSwitch = mdc.switchControl.MDCSwitch; const MDCTabBar = mdc.tabBar.MDCTabBar; const MDCTextField = mdc.textField.MDCTextField; const MDCTooltip = mdc.tooltip.MDCTooltip; const MDCTopAppBar = mdc.topAppBar.MDCTopAppBar;</script>
+
+</head>
+<body> 
+    <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu" id="menuBtn">menu</button>
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button hidden"
+          aria-label="Open navigation menu" id="closeBtn">close</button>
+      </section>
+      <label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+        <span class="mdc-text-field__ripple"></span>
+        <input class="mdc-text-field__input" type="text" placeholder="Recipe" aria-label="Label" id="find">
+        <span class="mdc-line-ripple"></span>
+      </label>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <div id="demo-menu" class="mdc-menu-surface--anchor">
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="menu" id="menu">keyboard_arrow_down</button>
+          <div class="mdc-menu mdc-menu-surface">
+            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+              <li class="mdc-list-item" role="menuitem" id="vegan">
+                <span class="mdc-list-item__ripple"></span>
+                <span class="mdc-list-item__text" id="veganText">Vegan</span>
+                <li class="mdc-list-item" role="menuitem"  id="gluten">
+                  <span class="mdc-list-item__ripple"></span>
+                  <span class="mdc-list-item__text" id="glutenText">Gluten free</span>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <aside class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <img class="menuImg" src="images/shrimpalfredo.png"
+          alt="disgust">
+        <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page" tabindex="0" id="navItem">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>
+          <span class="mdc-list-item__text">favourite</span>
+        </a>
+        <a class="mdc-list-item" href="#" id="navItem">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">fastfood</i>
+          <span class="mdc-list-item__text">Your reciape</span>
+        </a>
+        <a class="mdc-list-item account" href="#" id="navItem">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">person</i>
+          <span class="mdc-list-item__text">Account</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+  <div class="mdc-drawer-scrim"></div>
+  
+  <main class="mdc-top-app-bar--fixed-adjust">
+    <div class="recipes">
+      <div class="welcome">
+        <img src="images/shrimpalfredo.png" alt="welcome" class="image">
+        <p>Welcome to Caseoh cooking, search for a recipe for a dish</p>
+      </div>
+    </div>
+    <div class="accountPage hidden">
+      <nav class="mdc-list">
+        <img class="menuImg" src="images/shrimpalfredo.png"
+          alt="disgust">
+        <a class="mdc-list-item" href="#" id="navItem">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">person</i>
+          <span class="mdc-list-item__text">Edit</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page" tabindex="0" id="navItem">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>
+          <span class="mdc-list-item__text">favourite</span>
+        </a>
+        <a class="mdc-list-item" href="#" id="navItem">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">fastfood</i>
+          <span class="mdc-list-item__text">Your reciape</span>
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <section class="sheet sheet-out-of-view sheet" id="sheet">
+    <main>
+      <img class="mdc-image-list__image sheetImage" src="images/KaasHoofd.gif" alt="Food">
+      <div class="mdc-image-list__supporting"></div>
+      <h1 id="recipeName">Loading recipe</h1>
+      <p>Diets</p>
+      <h2 id="diets">Loading info</h2>
+      <p>Dish types</p>
+      <h3 id="types">Loading info</h3>
+      <p>Ingredients</p>
+      <p id="ingredients">Loading ingredients</p>
+      <p>Info</p>
+      <p id="info">Loading info</p>
+    </main>
+  </section>
+    
+    <script>
+      window.addEventListener('load', () =>
+    {
+      if ("serviceWorker" in navigator)
+      {
+        navigator.serviceWorker.register('service-worker.js')
+      }
+    })
+    </script>
+<script src="api.js"></script>
+</body>
+</html>

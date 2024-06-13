@@ -1,0 +1,190 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #FFF;
+}
+
+body
+{
+    background-color: #404142;
+}
+
+:root
+{
+ --mdc-theme-primary: #50C878
+}
+
+.mdc-drawer
+{
+    background-color: #404142;
+}
+
+main
+{
+    height: 100vh;
+    background-color: #404142;
+    color: #9D9D9D;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+ul
+{
+    background-color: #404142;
+}
+
+#homeBtn
+{
+    cursor: pointer;
+}
+
+.mdc-text-field
+{
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+}
+
+.mdc-menu .mdc-list
+{
+    width: auto;
+}
+
+#navItem
+{
+    margin: 1em;
+    padding: 1em;
+}
+
+.menuImg
+{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.title
+{
+    font-size: 13px;
+    color: #9D9D9D;
+}
+
+.mdc-image-list--masonry
+{
+    columns: 2;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.sheet
+{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    margin-left: 0;
+    background-color: #404142;
+    transition: 0.3s ease;
+}
+
+.welcome
+{
+    width: 205px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #fff solid 2px;
+    margin: 25px 25px 25px 25px;
+}
+
+.image
+{
+    width: 205px;
+    height: auto;
+}
+
+.errorImage
+{
+    width: 100%;
+    height: auto;
+}
+
+.mdc-top-app-bar__row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sheet-out-of-view
+{
+    margin-left: -100%;
+}
+
+.sheet main
+{
+    min-height: calc(100vh - 56px - 48px);
+}
+
+.sheet img 
+{
+    padding-top: 56px;
+    width: 100%;
+    height: auto;
+}
+
+#diets, #types, #ingredients, #info, #recipeName
+{
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #FFF;
+}
+
+#info
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.recipe
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #fff solid 2px;
+    background-color: #404142;
+}
+
+.recipeImage
+{
+    width: 205px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #fff solid 2px;
+    margin: 25px 25px 25px 25px;
+}
+
+.recipeName
+{
+    width: auto;
+    display: flex;
+    color: #FFF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
